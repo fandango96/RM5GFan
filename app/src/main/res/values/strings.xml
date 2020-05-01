@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">RM5G Fan</string>
-    <string name="tile_name">Cooling Fan</string>
+    <string name="app_name">RM5G Fan &amp; LED</string>
+    <string name="cooling_fan_tile_name">Cooling Fan</string>
     <string name="cooling_fan_off">Off</string>
     <string name="cooling_fan_on">On</string>
+    <string name="led_strip_tile_name">LED Strip</string>
 </resources>
