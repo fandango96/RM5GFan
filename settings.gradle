@@ -1,0 +1,2 @@
+rootProject.name='RM5G Fan'
+include ':app'

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RM5G Fan</string>
+    <string name="tile_name">Cooling Fan</string>
+    <string name="cooling_fan_off">Off</string>
+    <string name="cooling_fan_on">On</string>
+</resources>
