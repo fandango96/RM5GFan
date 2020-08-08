@@ -4,4 +4,5 @@
     <string name="cooling_fan_off">Off</string>
     <string name="cooling_fan_on">On</string>
     <string name="led_strip_tile_name">LED Strip</string>
+    <string name="nfc_strip_tile_name">NFC</string>
 </resources>
