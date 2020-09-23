@@ -22,9 +22,9 @@
         </service>
 
         <service
-            android:name=".LedStripTileService"
-            android:icon="@drawable/ic_lightbulb_outline_white_24dp"
-            android:label="@string/led_strip_tile_name"
+            android:name=".NfcTileService"
+            android:icon="@drawable/ic_baseline_nfc_white_24dp"
+            android:label="@string/nfc_tile_name"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
@@ -32,9 +32,9 @@
         </service>
 
         <service
-            android:name=".NfcTileService"
-            android:icon="@drawable/ic_baseline_nfc_white_24dp"
-            android:label="@string/nfc_strip_tile_name"
+            android:name=".RefreshTileService"
+            android:icon="@drawable/ic_baseline_refresh_white_24dp"
+            android:label="@string/refresh_tile_name"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />

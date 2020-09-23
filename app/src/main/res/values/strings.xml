@@ -3,6 +3,10 @@
     <string name="cooling_fan_tile_name">Cooling Fan</string>
     <string name="cooling_fan_off">Off</string>
     <string name="cooling_fan_on">On</string>
-    <string name="led_strip_tile_name">LED Strip</string>
-    <string name="nfc_strip_tile_name">NFC</string>
+    <string name="nfc_tile_name">NFC</string>
+    <string name="refresh_tile_name">Refresh Rate</string>
+    <string name="sixtyHz">60</string>
+    <string name="ninetyHz">90</string>
+    <string name="oneTwentyHz">120</string>
+    <string name="oneFortyFourHz">144</string>
 </resources>
