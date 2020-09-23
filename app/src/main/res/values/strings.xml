@@ -9,4 +9,5 @@
     <string name="ninetyHz">90</string>
     <string name="oneTwentyHz">120</string>
     <string name="oneFortyFourHz">144</string>
+    <string name="led_strip_tile_name">LED Strip</string>
 </resources>
