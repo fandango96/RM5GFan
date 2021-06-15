@@ -1,14 +1,12 @@
-package io.github.fandango_.rm5gfan
+package io.github.fandango96.rm5gfan
 
-import android.nfc.NfcAdapter
+import android.provider.Settings
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
 
-class NfcTileService : TileService() {
+class CoolingFanTileService : TileService() {
     override fun onStartListening() {
-        NfcAdapter.getDefaultAdapter(this).isEnabled.let {
-            processTile(!it)
-        }
+        processTile(Settings.Global.getInt(contentResolver, "game_fan_off_on") == 0)
     }
 
     private fun processTile(isOff: Boolean) {
@@ -26,17 +24,9 @@ class NfcTileService : TileService() {
     }
 
     override fun onClick() {
-        (qsTile.state == Tile.STATE_ACTIVE).let {
-            Runtime.getRuntime().exec(
-                arrayOf(
-                    "su",
-                    "-c",
-                    "svc",
-                    "nfc",
-                    if (it) "disable" else "enable"
-                )
-            )
-            processTile(it)
+        (if (qsTile.state == Tile.STATE_ACTIVE) 0 else 1).let {
+            Settings.Global.putInt(contentResolver, "game_fan_off_on", it)
+            processTile(it == 0)
         }
     }
 }
