@@ -3,4 +3,5 @@
     <string name="cooling_fan_tile_name">Cooling Fan</string>
     <string name="cooling_fan_off">Off</string>
     <string name="cooling_fan_on">On</string>
+    <string name="nfc_tile_name">NFC</string>
 </resources>
