@@ -19,7 +19,8 @@
             android:name="io.github.fandango96.rm5gfan.CoolingFanTileService"
             android:icon="@drawable/ic_ac_unit_white_24dp"
             android:label="@string/cooling_fan_tile_name"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
@@ -29,7 +30,19 @@
             android:name="io.github.fandango96.rm5gfan.NfcTileService"
             android:icon="@drawable/ic_baseline_nfc_white_24dp"
             android:label="@string/nfc_tile_name"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="io.github.fandango96.rm5gfan.ChargeSeparationTileService"
+            android:icon="@drawable/ic_baseline_battery_charging_full_white_24dp"
+            android:label="@string/charge_separation_tile_name"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
