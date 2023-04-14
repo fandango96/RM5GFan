@@ -9,6 +9,10 @@
     <string name="ninetyHz">90</string>
     <string name="oneTwentyHz">120</string>
     <string name="oneFortyFourHz">144</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
     <string name="led_strip_tile_name">LED Strip</string>
     <string name="smart_fan_tile_name">Smart Fan</string>
+    <string name="gsi_fan_tile_name">GSI Fan</string>
 </resources>
